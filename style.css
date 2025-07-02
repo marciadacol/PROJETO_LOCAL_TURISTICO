@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 :root {
 
     --text-primary: #1B1B1B;
@@ -6,11 +11,10 @@
 }
 body {
     background-color: #F5F4F0;
-    border: solid;
     width: 1120px;
-    margin: 88px 80px;
+    margin: auto;
+    margin-top: 88px;
     font-family: "Open Sans", sans-serif;
-
 }
 
 #text-headline1 p{
@@ -41,22 +45,21 @@ header img {
     text-align: center;
     margin-top: 24px;
     margin-bottom: 40px;
+    color: var(--text-secondary);
 }
 
 
 
-hr {
+header hr {
     border: none;
     height: 1px;
     background-color: var(--divisor);
-    opacity: 100%;
-    margin-bottom: 88px;
+    margin-bottom: 64px;
 }
 
 
 
-#text-headline2 span{
-    box-sizing: border-box;
+#text-headline2 span {
     font-size: 16px;
     font-weight: bold;
     color: #E1624F;
@@ -64,7 +67,8 @@ hr {
 }
 
 h2 {
-   
+    display: flex;
+    margin-top: 2px;
     color: var(--text-primary);
     font-size: 32px;
     line-height: 44px;
@@ -72,21 +76,32 @@ h2 {
     
 }
 
-main article {
+main p {
+    color: var(--text-secondary);
+    font-size: 16px;
+    margin-bottom: 64px;
+}
+
+.list article {
     color: var(--text-secondary);
     font-size: 16px;
 }
 
 main img {
-    width: 1120px;
+    
+    width: 1120px ;
     height: 350px;
     border-radius: 28px;
+    margin-top: 48px;
 }
 
 ol {
     list-style-position: inside;
     font-size: 32px;
     padding-left: 0;
+    margin-top: 20px;
+    margin-bottom: 4px;
+    
 }
 
 li {
@@ -94,11 +109,11 @@ li {
     font-weight: bold;
     font-size: 28px;
 }
-
 h3 {
     color: var(--text-secondary);
     font-weight: bold;
     font-size: 16px;
+    margin: auto;
 }
 
 .ponto {
@@ -127,6 +142,13 @@ h3 {
     font-weight: bold;
 }
 
+main hr {
+    border: none;
+    height: 1px;
+    background-color: var(--divisor);
+    margin-block: 40px;
+}
+
 .description2 {
     color: var(--text-secondary);
     text-align: center;
@@ -134,8 +156,18 @@ h3 {
 }
 
 footer {
+
     font-family: "Alice", serif;
     font-size: 16px;
     color: var(--text-secondary);
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 65px;
+    margin-bottom: 48px;
+}
+
+footer img {
+    height: 16px;
+    width: 16px;
+    padding: 4px;
 }
